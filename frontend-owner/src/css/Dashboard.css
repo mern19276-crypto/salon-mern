@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Base Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Layout Container */
+.modern-full-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modern-layout {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.modern-sidebar {
+  width: 90px;
+  background: linear-gradient(to bottom, #0033a0, #00a859);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  color: white;
+  position: relative;
+}
+
+.modern-logo {
+  width: 45px;
+  margin-bottom: 30px;
+}
+
+.modern-sidebar i {
+  font-size: 20px;
+  margin: 20px 0;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.modern-sidebar i:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.2);
+}
+
+/* Active Sidebar Button */
+.modern-sidebar i.active {
+  background-color: #ffffff22;
+  border-left: 4px solid #00e0ff;
+  color: #00e0ff;
+  font-weight: bold;
+  box-shadow: inset 0 0 8px #00e0ff88;
+}
+
+/* Main Area */
+.modern-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #f5faff;
+}
+
+/* Header */
+.modern-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modern-header h2 {
+  font-size: 26px;
+  color: #003e7e;
+}
+
+.modern-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modern-header-right i {
+  font-size: 18px;
+  color: #003e7e;
+  cursor: pointer;
+}
+
+.modern-profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* Content Layout */
+.modern-content-area {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.modern-appointments,
+.modern-today {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 350px;
+}
+
+.modern-appointments h3,
+.modern-today h3 {
+  font-size: 20px;
+  color: #003e7e;
+  margin-bottom: 15px;
+}
+
+.modern-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+  border-left: 5px solid #00bcd4;
+  background-color: #f9fcff;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.modern-card:hover {
+  transform: scale(1.02);
+}
+
+.modern-left span {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
+.modern-left h4 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+  color: #003e7e;
+}
+
+.modern-left small {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 3px;
+}
+
+.modern-right {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #0056a3;
+}
+
+/* Appointment Status Tags */
+.modern-tag {
+  margin-top: 6px;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 16px;
+  text-transform: capitalize;
+  color: white !important; /* ✅ Force white text */
+  background-color: #999;
+}
+
+
+.modern-booked {
+  background-color: #60a5fa; /* light blue */
+}
+
+.modern-confirmed {
+  background-color: #10b981; /* green */
+}
+
+.modern-arrived {
+  background-color: #f59e0b; /* amber */
+}
+
+.modern-started {
+  background-color: #8b5cf6; /* violet */
+}
+
+.modern-completed {
+  background-color: #22c55e; /* emerald */
+}
+
+.modern-cancel {
+  background-color: #ef4444; /* red */
+}
+
+
+/* Empty State */
+.modern-empty {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.modern-empty i {
+  font-size: 30px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.modern-empty h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.modern-empty p {
+  font-size: 14px;
+  color: #666;
+}
+
+.modern-empty a {
+  color: #0056a3;
+  text-decoration: underline;
+}
+
+/* Divider */
+hr {
+  margin: 40px 0 20px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modern-content-area {
+    flex-direction: column;
+  }
+
+  .modern-sidebar {
+    width: 60px;
+  }
+
+  .modern-logo {
+    width: 35px;
+  }
+
+  .modern-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modern-header h2 {
+    font-size: 22px;
+  }
+}

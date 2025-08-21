@@ -1,0 +1,111 @@
+.feedback-page-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+.feedback-page-content h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Feedback Card */
+.feedback-card {
+  background: white;
+  border-left: 5px solid #00a859;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.feedback-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.rating-stars {
+  font-size: 18px;
+  color: #ffc107;
+}
+
+.comment {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #555;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.timestamp {
+  font-size: 13px;
+  color: #888;
+}
+
+.no-feedback-msg {
+  font-size: 16px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Salon Info Section */
+.salon-info {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.salon-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.salon-info p {
+  font-size: 15px;
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Services Section */
+.services-section {
+  margin-bottom: 30px;
+}
+
+.services-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 650px; /* 🔹 More length */
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.service-card h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.service-card p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #555;
+}
