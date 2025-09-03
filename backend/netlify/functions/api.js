@@ -16,13 +16,14 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // ✅ Import your routes
 // Route imports
-const salonRoutes = require("./routes/salonRoutes");
-const serviceRoutes = require('./routes/serviceRoutes');
-const professionalRoutes = require("./routes/professionalRoutes");
-const timeSlotRoutes = require("./routes/timeSlotRouts");
-const appointmentRoutes = require("./routes/appointmentRoutes");
-const userRoutes = require('./routes/userRoutes');
-const feedbackRoutes = require("./routes/feedbackRoutes");
+// Route imports
+const salonRoutes = require("../../routes/salonRoutes");
+const serviceRoutes = require('../../routes/serviceRoutes');
+const professionalRoutes = require("../../routes/professionalRoutes");
+const timeSlotRoutes = require("../../routes/timeSlotRouts");
+const appointmentRoutes = require("../../routes/appointmentRoutes");
+const userRoutes = require('../../routes/userRoutes');
+const feedbackRoutes = require("../../routes/feedbackRoutes");
 
 
 // API Routes
