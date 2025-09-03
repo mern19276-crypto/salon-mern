@@ -183,7 +183,7 @@ const SearchSalon = () => {
   return (
     <div className="search-wrapper">
       <header className="navbar">
-        <div className="logo logo-lowered" onClick={() => navigate("/")}>Mobitel Salon</div>
+        <div className="logo logo-lowered" onClick={() => navigate("/")}>Salon</div>
         <nav className="nav-menu">
           <button className="nav-btn-light" onClick={() => navigate("/business")}>For Business</button>
           {!user ? (

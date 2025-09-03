@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <header className="navbar">
-        <div className="logo" onClick={() => navigate("/")}>Mobitel Salon</div>
+        <div className="logo" onClick={() => navigate("/")}>Salon</div>
         <nav className="nav-menu">
           <button className="nav-btn-light" onClick={() => navigate("/business")}>For Business</button>
           {!user ? (
